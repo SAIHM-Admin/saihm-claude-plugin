@@ -6,12 +6,15 @@ SAIHM lets Claude save what matters while you work, recall it in later sessions,
 memory with another person's agent, take the share back, or erase a memory. Your memories
 also come with you to other AI assistants and models that use SAIHM.
 
-SAIHM encrypts each memory on your computer before sending it, and the SAIHM service keeps
-your memories only as ciphertext. Neither SAIHM nor the storage behind it can read them.
+SAIHM encrypts each memory on your computer before sending it, so neither SAIHM nor the
+storage behind it can read your memories. For fast recall, the server also keeps a copy
+of your memories on your computer that is not encrypted. Only your user account can read
+it, and [What this plugin runs, sends and keeps](#what-this-plugin-runs-sends-and-keeps)
+says how to go without one.
 
 This plugin adds the SAIHM MCP server,
 [`@saihm/mcp-server-pro`](https://www.npmjs.com/package/@saihm/mcp-server-pro) version
-0.14.1, which runs on your computer. It sets up the free tier. Paid plans use a different
+0.14.2, which runs on your computer. It sets up the free tier. Paid plans use a different
 setup, described under Plans below.
 
 ## Where it works
@@ -43,7 +46,7 @@ that only one copy runs. Otherwise, or if you're not sure, keep your current set
    terminal. It downloads the package, prints its version and exits:
 
    ```sh
-   npx -y @saihm/mcp-server-pro@0.14.1 --version
+   npx -y @saihm/mcp-server-pro@0.14.2 --version
    ```
 
 2. In Claude Code, add this repository as a plugin marketplace:
@@ -104,7 +107,7 @@ You talk to Claude in plain language, and it picks the tools. Some starters:
 
 > Show my SAIHM status.
 
-> Erase the memory about the Henderson account.
+> Erase my SAIHM memory about the Henderson account.
 
 ## Tools
 
@@ -113,7 +116,7 @@ You talk to Claude in plain language, and it picks the tools. Some starters:
 | `saihm_remember` | Encrypts on your machine, then stores it |
 | `saihm_recall` | Fetches and decrypts on your machine |
 | `saihm_forget` | **Permanently erases.** No undo |
-| `saihm_status` | Your usage and settings |
+| `saihm_status` | Your plan, memory counts and settings |
 | `saihm_share` | Grants one memory to one agent, optionally with an expiry |
 | `saihm_revoke_share` | Withdraws that grant |
 | `saihm_join` | Starts the free join described above |
@@ -130,7 +133,7 @@ has already read.
 
 ## What this plugin runs, sends and keeps
 
-- It runs `npx -y @saihm/mcp-server-pro@0.14.1`. On the first start, npm downloads that
+- It runs `npx -y @saihm/mcp-server-pro@0.14.2`. On the first start, npm downloads that
   package and its dependencies from the npm registry.
 - The server connects only to `https://saihm.net`. It sends your encrypted memories there
   with the requests that store, share and erase them, fetches them back when Claude

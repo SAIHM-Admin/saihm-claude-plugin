@@ -1,7 +1,7 @@
 {
   "name": "saihm",
   "displayName": "SAIHM",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Encrypted, portable long-term memory for Claude Code. Runs the SAIHM MCP server on your computer.",
   "author": {
     "name": "SAIHM, Inc.",
