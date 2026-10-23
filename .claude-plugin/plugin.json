@@ -1,0 +1,26 @@
+{
+  "name": "saihm",
+  "displayName": "SAIHM",
+  "version": "1.0.0",
+  "description": "Encrypted, portable long-term memory for Claude Code. Runs the SAIHM MCP server on your computer.",
+  "author": {
+    "name": "SAIHM, Inc.",
+    "url": "https://saihm.net"
+  },
+  "homepage": "https://saihm.net",
+  "repository": "https://github.com/SAIHM-Admin/saihm-claude-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "memory",
+    "long-term-memory",
+    "encrypted-memory",
+    "portable-memory",
+    "mcp",
+    "ai-agents",
+    "enterprise"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/SAIHM-Admin/saihm-mcp-server-pro#readme",
+  "supportUrl": "https://saihm.net/contact",
+  "privacyPolicyUrl": "https://saihm.net/privacy"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "saihm",
+  "owner": {
+    "name": "SAIHM, Inc.",
+    "url": "https://saihm.net"
+  },
+  "description": "The SAIHM plugin for Claude Code.",
+  "plugins": [
+    {
+      "name": "saihm",
+      "source": "./"
+    }
+  ]
+}

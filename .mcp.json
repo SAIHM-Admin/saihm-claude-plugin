@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "saihm": {
+      "command": "npx",
+      "args": ["-y", "@saihm/mcp-server-pro@0.14.1"],
+      "env": {
+        "SAIHM_ENDPOINT_URL": "https://saihm.net/mcp"
+      }
+    }
+  }
+}
