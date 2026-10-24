@@ -9,8 +9,7 @@ also come with you to other AI assistants and models that use SAIHM.
 SAIHM encrypts each memory on your computer before sending it, so neither SAIHM nor the
 storage behind it can read your memories. For fast recall, SAIHM also keeps an
 unencrypted copy of your memories on your computer. Only your user account can read it,
-and [What this plugin runs, sends and keeps](#what-this-plugin-runs-sends-and-keeps) says
-how to go without one.
+and you can [go without one](#what-this-plugin-runs-sends-and-keeps).
 
 This plugin adds the SAIHM MCP server,
 [`@saihm/mcp-server-pro`](https://www.npmjs.com/package/@saihm/mcp-server-pro) version
@@ -116,7 +115,7 @@ You talk to Claude in plain language, and it picks the tools. Some starters:
 | `saihm_remember` | Encrypts on your machine, then stores it |
 | `saihm_recall` | Fetches and decrypts on your machine |
 | `saihm_forget` | **Permanently erases.** No undo |
-| `saihm_status` | Your plan, memory counts and settings |
+| `saihm_status` | Your identity, plan and memory counts |
 | `saihm_share` | Grants one memory to one agent, optionally with an expiry |
 | `saihm_revoke_share` | Withdraws that grant |
 | `saihm_join` | Starts the free join described above |
@@ -127,8 +126,8 @@ Each tool carries labels for hosts that ask before destructive actions, and
 
 **What erasing reaches.** `saihm_forget` makes the memory permanently unreadable in SAIHM
 and removes it from this computer's local copy. Another computer that uses your key drops
-it at its next recall. Erasing can't reach a conversation that already contains the
-memory, including Claude Code's saved session history, or what someone you shared it
+it at its next successful recall. Erasing can't reach a conversation that already contains
+the memory, including Claude Code's saved session history, or what someone you shared it
 with has already read. A backup of your computer keeps the local copy as it was when the
 backup was made.
 
@@ -136,9 +135,9 @@ backup was made.
 
 - It runs `npx -y @saihm/mcp-server-pro@0.14.2`. On the first start, npm downloads that
   package and its dependencies from the npm registry.
-- The server connects only to `https://saihm.net`. It sends your encrypted memories there
-  with the requests that store, share and erase them, fetches them back when Claude
-  recalls them, and carries the steps of a join.
+- The server connects only to `https://saihm.net`. It sends each memory there encrypted
+  when Claude saves it and fetches it back when Claude recalls it. It also carries the
+  requests that share and erase memories, and the steps of a join.
 - A join asks you to sign in to GitHub in your own browser.
 - The server asks Claude to load your memories before other work in each session, so
   your memories become part of the conversation.
@@ -146,19 +145,22 @@ backup was made.
   keeps an unencrypted copy of your memories there, so that later recalls fetch only what
   is new. The copy holds every memory you save on this computer and, after the first
   recall, all of your memories. Only your user account can read it, and `forget` removes a
-  memory from it too. This plugin keeps the copy on. Without the copy, each recall
-  fetches all of your memories again, which is slower and uses more of the free allowance.
-  If you'd rather not keep one, quit every Claude Code window and any other app that runs
-  SAIHM with this key, uninstall the plugin and delete the `recall.` files in `~/.saihm`.
-  Then set up SAIHM with the guide's
+  memory from it too. This plugin keeps the copy on.
+- Without the copy, each recall fetches all of your memories again, which is slower and
+  uses more of your plan's allowance (on the free tier, its one-time allowance). If you'd
+  rather not keep one, quit every Claude Code window and any other app that runs SAIHM
+  with this key, uninstall the plugin and delete the `recall.` files in `~/.saihm`. Then
+  set up SAIHM with the guide's
   [client steps](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client),
   and turn the copy off in each client that uses this key, following
-  [How it works](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#how-it-works) in the same guide.
+  [How it works](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#how-it-works) in the
+  same guide.
 - The plugin sets `SAIHM_ENDPOINT_URL`. The server also reads other `SAIHM_` settings, and
   a few standard variables such as proxy settings, from the environment Claude Code starts
   in.
-- Apart from those settings, it sees only what Claude passes to its tools, and it reads only its own files. It
-  doesn't read Claude's own memory, your chat history or your other files.
+- Apart from those settings, it sees only what Claude passes to its tools, and it reads
+  only its own files. It doesn't read Claude's own memory, your chat history or your other
+  files.
 
 ## Plans
 
