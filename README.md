@@ -196,8 +196,8 @@ local copy, delete the `recall.` files in that folder.
   [github.com/SAIHM-Admin/saihm-mcp-server-pro](https://github.com/SAIHM-Admin/saihm-mcp-server-pro)
 - **Support:** [saihm.net/contact](https://saihm.net/contact)
 - **WhatsApp:** message `@saihm.inc` with quick questions, or join the
-  [SAIHM community group](https://chat.whatsapp.com/LYYL1MgKe3IE2hcR8qfErf). SAIHM never
-  asks for your key file; never send it to anyone.
+  [SAIHM community group](https://chat.whatsapp.com/LYYL1MgKe3IE2hcR8qfErf). SAIHM
+  personnel never ask for your key file; never send it to anyone.
 - **Security reports:** security@saihm.net
 - **Privacy:** [saihm.net/privacy](https://saihm.net/privacy)
 
