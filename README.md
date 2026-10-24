@@ -7,7 +7,7 @@ memory with another person's agent, take the share back, or erase a memory. Your
 also come with you to other AI assistants and models that use SAIHM.
 
 SAIHM encrypts each memory on your computer before sending it, so neither SAIHM nor the
-storage behind it can read your memories. For fast recall, the server also keeps an
+storage behind it can read your memories. For fast recall, SAIHM also keeps an
 unencrypted copy of your memories on your computer. Only your user account can read it,
 and [What this plugin runs, sends and keeps](#what-this-plugin-runs-sends-and-keeps) says
 how to go without one.
@@ -128,8 +128,9 @@ Each tool carries labels for hosts that ask before destructive actions, and
 **What erasing reaches.** `saihm_forget` makes the memory permanently unreadable in SAIHM
 and removes it from this computer's local copy. Another computer that uses your key drops
 it at its next recall. Erasing can't reach a conversation that already contains the
-memory, including Claude Code's saved session history, a backup of your computer made
-while the local copy held it, or what someone you shared it with has already read.
+memory, including Claude Code's saved session history, or what someone you shared it
+with has already read. A backup of your computer keeps the local copy as it was when the
+backup was made.
 
 ## What this plugin runs, sends and keeps
 
@@ -145,11 +146,14 @@ while the local copy held it, or what someone you shared it with has already rea
   keeps an unencrypted copy of your memories there, so that later recalls fetch only what
   is new. The copy holds every memory you save on this computer and, after the first
   recall, all of your memories. Only your user account can read it, and `forget` removes a
-  memory from it too. This plugin keeps the copy on. If you don't want one, quit every
-  Claude Code window and any other app that runs SAIHM with this key, uninstall the plugin
-  and delete the `recall.` files in `~/.saihm`. Then set up SAIHM with the guide's steps
-  and turn the copy off in each client that uses this key, as the guide's
-  [How it works](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#how-it-works) explains.
+  memory from it too. This plugin keeps the copy on. Without it, each recall fetches all of
+  your memories again, which is slower and uses more of the free allowance. If you'd rather
+  not keep one, quit every Claude Code window and any other app that runs SAIHM with this
+  key, uninstall the plugin and delete the `recall.` files in `~/.saihm`. Then set up SAIHM
+  with the guide's
+  [client steps](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client)
+  and turn the copy off in each client that uses this key, as its
+  [How it works](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#how-it-works) section explains.
 - The plugin sets `SAIHM_ENDPOINT_URL`. The server also reads other `SAIHM_` settings, and
   a few standard variables such as proxy settings, from the environment Claude Code starts
   in.
