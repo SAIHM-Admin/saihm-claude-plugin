@@ -146,14 +146,14 @@ backup was made.
   keeps an unencrypted copy of your memories there, so that later recalls fetch only what
   is new. The copy holds every memory you save on this computer and, after the first
   recall, all of your memories. Only your user account can read it, and `forget` removes a
-  memory from it too. This plugin keeps the copy on. Without it, each recall fetches all of
-  your memories again, which is slower and uses more of the free allowance. If you'd rather
-  not keep one, quit every Claude Code window and any other app that runs SAIHM with this
-  key, uninstall the plugin and delete the `recall.` files in `~/.saihm`. Then set up SAIHM
-  with the guide's
-  [client steps](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client)
-  and turn the copy off in each client that uses this key, as its
-  [How it works](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#how-it-works) section explains.
+  memory from it too. This plugin keeps the copy on. Without the copy, each recall
+  fetches all of your memories again, which is slower and uses more of the free allowance.
+  If you'd rather not keep one, quit every Claude Code window and any other app that runs
+  SAIHM with this key, uninstall the plugin and delete the `recall.` files in `~/.saihm`.
+  Then set up SAIHM with the guide's
+  [client steps](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client),
+  and turn the copy off in each client that uses this key, following
+  [How it works](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#how-it-works) in the same guide.
 - The plugin sets `SAIHM_ENDPOINT_URL`. The server also reads other `SAIHM_` settings, and
   a few standard variables such as proxy settings, from the environment Claude Code starts
   in.
