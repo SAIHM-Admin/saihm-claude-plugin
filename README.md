@@ -9,7 +9,8 @@ also come with you to other AI assistants and models that use SAIHM.
 SAIHM encrypts each memory on your computer before sending it, so neither SAIHM nor the
 storage behind it can read your memories. For fast recall, SAIHM also keeps an
 unencrypted copy of your memories on your computer. Only your user account can read it,
-and you can [go without one](#what-this-plugin-runs-sends-and-keeps).
+and you can go without one (see
+[What this plugin runs, sends and keeps](#what-this-plugin-runs-sends-and-keeps)).
 
 This plugin adds the SAIHM MCP server,
 [`@saihm/mcp-server-pro`](https://www.npmjs.com/package/@saihm/mcp-server-pro) version
@@ -136,8 +137,8 @@ backup was made.
 - It runs `npx -y @saihm/mcp-server-pro@0.14.2`. On the first start, npm downloads that
   package and its dependencies from the npm registry.
 - The server connects only to `https://saihm.net`. It sends each memory there encrypted
-  when Claude saves it and fetches it back when Claude recalls it. It also carries the
-  requests that share and erase memories, and the steps of a join.
+  when Claude saves it, and fetches memories from there when Claude recalls them. It also
+  carries the requests that share and erase memories, and the steps of a join.
 - A join asks you to sign in to GitHub in your own browser.
 - The server asks Claude to load your memories before other work in each session, so
   your memories become part of the conversation.
@@ -146,8 +147,8 @@ backup was made.
   is new. The copy holds every memory you save on this computer and, after the first
   recall, all of your memories. Only your user account can read it, and `forget` removes a
   memory from it too. This plugin keeps the copy on.
-- Without the copy, each recall fetches all of your memories again, which is slower and
-  uses more of your plan's allowance (on the free tier, its one-time allowance). If you'd
+- Without the copy, each recall fetches all of your memories again. That is slower and, on
+  a plan that limits recalls, such as the free tier, uses up its allowance faster. If you'd
   rather not keep one, quit every Claude Code window and any other app that runs SAIHM
   with this key, uninstall the plugin and delete the `recall.` files in `~/.saihm`. Then
   set up SAIHM with the guide's
@@ -193,6 +194,7 @@ local copy, delete the `recall.` files in that folder.
 - **Guide and reference:**
   [github.com/SAIHM-Admin/saihm-mcp-server-pro](https://github.com/SAIHM-Admin/saihm-mcp-server-pro)
 - **Support:** [saihm.net/contact](https://saihm.net/contact)
+- **WhatsApp:** `@saihm.inc`, for quick questions
 - **Security reports:** security@saihm.net
 - **Privacy:** [saihm.net/privacy](https://saihm.net/privacy)
 

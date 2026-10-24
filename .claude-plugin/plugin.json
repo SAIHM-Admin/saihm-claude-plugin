@@ -2,7 +2,7 @@
   "name": "saihm",
   "displayName": "SAIHM",
   "version": "1.0.1",
-  "description": "Portable long-term memory for Claude Code, encrypted before it leaves your computer. Runs the SAIHM MCP server locally.",
+  "description": "Portable long-term memory for Claude Code. SAIHM encrypts each memory on your computer before sending it.",
   "author": {
     "name": "SAIHM, Inc.",
     "url": "https://saihm.net"
