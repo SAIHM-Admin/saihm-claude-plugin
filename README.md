@@ -61,6 +61,9 @@ that only one copy runs. Otherwise, or if you're not sure, keep your current set
    /plugin install saihm@saihm
    ```
 
+   If Claude Code asks where to install it, choose user scope. The plugin is then yours
+   alone and stays out of any project's shared settings.
+
 4. Restart Claude Code.
 
 You can also run steps 2 and 3 from a terminal with
@@ -151,8 +154,8 @@ backup was made.
 - Without the copy, each recall fetches all of your memories again. That is slower and, on
   a plan that limits recalls, such as the free tier, uses up its allowance faster. If you'd
   rather not keep one, quit every Claude Code window and any other app that runs SAIHM
-  with this key, uninstall the plugin (`claude plugin uninstall saihm@saihm`) and delete
-  the `recall.` files in `~/.saihm`. Then set up SAIHM with the guide's
+  with this key, uninstall the plugin (`claude plugin uninstall saihm`) and delete the
+  `recall.` files in `~/.saihm`. Then set up SAIHM with the guide's
   [client steps](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client),
   and turn the copy off in each client that uses this key, following
   [How it works](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#how-it-works) in the
@@ -183,10 +186,10 @@ Claude may not be able to find them to erase. In that case, contact SAIHM at
 [saihm.net/contact](https://saihm.net/contact).
 
 Then quit every Claude Code window and any other app that runs SAIHM with this key. Run
-`claude plugin uninstall saihm@saihm`, and `claude plugin marketplace remove saihm` if you
-no longer want this marketplace. Your key and the local copy stay in `~/.saihm`. Keep the
-key if you may come back, because it's the only way to read your memories. To remove the
-local copy, delete the `recall.` files in that folder.
+`claude plugin uninstall saihm`, and also `claude plugin marketplace remove saihm` if you
+added this marketplace and no longer want it. Your key and the local copy stay in
+`~/.saihm`. Keep the key if you may come back, because it's the only way to read your
+memories. To remove the local copy, delete the `recall.` files in that folder.
 
 ## Help
 
