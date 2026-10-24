@@ -145,9 +145,9 @@ backup was made.
 - On your computer, the server keeps your key and its own state in `~/.saihm`. It also
   keeps an unencrypted copy of your memories there, so that later recalls fetch only what
   is new or has changed, on this computer or another. The copy holds every memory you save
-  on this computer and, after the first recall, all of your memories. Only your user
-  account can read it, and `forget` removes a memory from it too. This plugin keeps the
-  copy on.
+  or read on this computer and, after the first recall, all of your memories. Only your
+  user account can read it, and `forget` removes a memory from it too. This plugin keeps
+  the copy on.
 - Without the copy, each recall fetches all of your memories again. That is slower and, on
   a plan that limits recalls, such as the free tier, uses up its allowance faster. If you'd
   rather not keep one, quit every Claude Code window and any other app that runs SAIHM
