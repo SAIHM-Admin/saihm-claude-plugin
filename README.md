@@ -151,8 +151,8 @@ backup was made.
 - Without the copy, each recall fetches all of your memories again. That is slower and, on
   a plan that limits recalls, such as the free tier, uses up its allowance faster. If you'd
   rather not keep one, quit every Claude Code window and any other app that runs SAIHM
-  with this key, uninstall the plugin and delete the `recall.` files in `~/.saihm`. Then
-  set up SAIHM with the guide's
+  with this key, uninstall the plugin (`claude plugin uninstall saihm@saihm`) and delete
+  the `recall.` files in `~/.saihm`. Then set up SAIHM with the guide's
   [client steps](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client),
   and turn the copy off in each client that uses this key, following
   [How it works](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#how-it-works) in the
@@ -196,7 +196,8 @@ local copy, delete the `recall.` files in that folder.
   [github.com/SAIHM-Admin/saihm-mcp-server-pro](https://github.com/SAIHM-Admin/saihm-mcp-server-pro)
 - **Support:** [saihm.net/contact](https://saihm.net/contact)
 - **WhatsApp:** message `@saihm.inc` with quick questions, or join the
-  [SAIHM community group](https://chat.whatsapp.com/LYYL1MgKe3IE2hcR8qfErf)
+  [SAIHM community group](https://chat.whatsapp.com/LYYL1MgKe3IE2hcR8qfErf). SAIHM never
+  asks for your key file; never send it to anyone.
 - **Security reports:** security@saihm.net
 - **Privacy:** [saihm.net/privacy](https://saihm.net/privacy)
 
