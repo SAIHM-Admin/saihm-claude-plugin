@@ -132,9 +132,9 @@ Each tool carries labels for hosts that ask before destructive actions, and
 and removes it from this computer's local copy. Another computer that uses your key drops
 it at its next successful recall. Erasing can't reach a conversation that already contains
 the memory, including Claude Code's saved session history, and Claude in such a
-conversation can save it again. Nor can it reach what someone you shared it with has
-already read. A backup of your computer keeps the local copy as it was when the backup
-was made.
+conversation can save it again, though recall on the computer that erased it may not show
+it. Nor can it reach what someone you shared it with has already read. A backup of your
+computer keeps the local copy as it was when the backup was made.
 
 ## What this plugin runs, sends and keeps
 
@@ -156,8 +156,8 @@ was made.
   a plan that limits recalls, such as the free tier, uses up its allowance faster. If you'd
   rather not keep one, quit every Claude Code window and any other app that runs SAIHM
   with this key, uninstall the plugin (`claude plugin uninstall saihm`, or from the
-  Installed tab in `/plugin`) and delete the `recall.` files in `~/.saihm`. Then set up
-  SAIHM with the guide's
+  Installed tab in `/plugin`, then quit that window too) and delete the `recall.` files in
+  `~/.saihm`. Then set up SAIHM with the guide's
   [client steps](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client),
   and turn the copy off in each client that uses this key, following
   [How it works](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#how-it-works) in the
@@ -188,7 +188,8 @@ Claude may not be able to find them to erase. In that case, contact SAIHM at
 [saihm.net/contact](https://saihm.net/contact).
 
 Then quit every Claude Code window and any other app that runs SAIHM with this key. Run
-`claude plugin uninstall saihm`, or uninstall it from the Installed tab in `/plugin`.
+`claude plugin uninstall saihm`, or uninstall it from the Installed tab in `/plugin` and
+then quit that window too.
 Also run `claude plugin marketplace remove saihm` if you added this marketplace and no
 longer want it. Your key and the local copy stay in `~/.saihm`. Keep the key if you may
 come back, because it's the only way to read your memories. To remove the local copy,
