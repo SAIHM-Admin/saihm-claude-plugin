@@ -100,8 +100,8 @@ make you another one, and anyone who has the file can read, change and erase you
 
 ## Things to say
 
-You talk to Claude in plain language, and it picks the tools. Claude Code also keeps notes of its own,
-so name SAIHM when you want your SAIHM memory. Some starters:
+You talk to Claude in plain language, and it picks the tools. Claude Code also keeps notes
+of its own, so name SAIHM when you want your SAIHM memory. Some starters:
 
 > Recall my SAIHM memories before you start.
 
@@ -134,8 +134,9 @@ and removes it from this computer's local copy. Another computer that uses your 
 it at its next successful recall. Erasing can't reach a conversation that already contains
 the memory, including Claude Code's saved session history, and Claude in such a
 conversation can save it again, though recall on the computer that erased it may not show
-it. Nor can it reach what someone you shared it with has already read. A backup of your
-computer keeps the local copy as it was when the backup was made.
+it. Nor can it reach what someone you shared it with has already read, or anything Claude
+Code wrote about it in its own notes. A backup of your computer keeps the local copy as it
+was when the backup was made.
 
 ## What this plugin runs, sends and keeps
 
@@ -183,10 +184,10 @@ and uninstall the plugin. Upgrading by card keeps the same key and every memory.
 
 ## Remove the plugin
 
-To delete your memories from SAIHM too, ask Claude to erase them while the plugin is still
-installed. Looking memories up counts against the free allowance, so if yours has run out,
-Claude may not be able to find them to erase. In that case, contact SAIHM at
-[saihm.net/contact](https://saihm.net/contact).
+To delete your memories from SAIHM too, ask Claude to erase your SAIHM memories while the
+plugin is still installed. Looking memories up counts against the free allowance, so if
+yours has run out, Claude may not be able to find them to erase. In that case, contact
+SAIHM at [saihm.net/contact](https://saihm.net/contact).
 
 Then quit every Claude Code window and any other app that runs SAIHM with this key. Run
 `claude plugin uninstall saihm`, or uninstall it from the Installed tab in `/plugin` and
