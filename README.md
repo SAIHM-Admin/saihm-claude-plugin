@@ -134,9 +134,9 @@ and removes it from this computer's local copy. Another computer that uses your 
 it at its next successful recall. Erasing can't reach a conversation that already contains
 the memory, including Claude Code's saved session history, and Claude in such a
 conversation can save it again, though recall on the computer that erased it may not show
-it. Nor can it reach what someone you shared it with has already read, or anything Claude
-Code wrote about it in its own notes. A backup of your computer keeps the local copy as it
-was when the backup was made.
+it. Nor can erasing reach what someone you shared it with has already read, or anything
+Claude Code wrote about it in its own notes. A backup of your computer keeps the local copy
+as it was when the backup was made.
 
 ## What this plugin runs, sends and keeps
 
