@@ -100,13 +100,14 @@ make you another one, and anyone who has the file can read, change and erase you
 
 ## Things to say
 
-You talk to Claude in plain language, and it picks the tools. Some starters:
+You talk to Claude in plain language, and it picks the tools. Claude Code also keeps notes of its own,
+so name SAIHM when you want your SAIHM memory. Some starters:
 
 > Recall my SAIHM memories before you start.
 
-> Remember that I prefer short answers and no preamble.
+> Remember in SAIHM that I prefer short answers and no preamble.
 
-> What do you remember about my deployment checklist?
+> What does SAIHM remember about my deployment checklist?
 
 > Show my SAIHM status.
 
