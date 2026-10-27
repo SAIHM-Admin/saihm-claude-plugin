@@ -75,12 +75,13 @@ You can also run steps 2 and 3 from a terminal with
 ## Get started
 
 To start a new SAIHM identity, say **"Join SAIHM"** in Claude Code, on your own computer
-that only you use. If you already have one, tell Claude so instead, and see below. No
-GitHub account? Skip the join and start at saihm.net/free, as described below. The free
-join needs no card:
+that only you use and that keeps its home folder between sessions. If you already have
+one, tell Claude so instead, and see below. No GitHub account? Skip the join and start at
+saihm.net/free, as described below. The free join needs no card:
 
 1. If Claude asks whether you already have a SAIHM identity, answer no. If it asks about
-   this computer's home folder, answer yes only on your own computer that only you use.
+   this computer's home folder, answer yes only on your own computer that only you use
+   and that keeps its home folder between sessions.
    Otherwise answer no, and join on that computer instead.
 2. SAIHM creates your key on this computer, and Claude shows you a link and a short code.
 3. Open the link, sign in to GitHub, enter the code and approve. The join finishes by
