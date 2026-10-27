@@ -192,8 +192,8 @@ as it was when the backup was made.
 
 ## Plans
 
-Start free. The free tier is a one-time allowance for trying SAIHM, with no card and
-nothing to cancel. Paid plans are monthly, and prices are on the
+Start free. The free tier is a one-time allowance, with no card and nothing to cancel.
+Paid plans are monthly, and prices are on the
 [pricing page](https://saihm.net/pricing).
 
 This plugin sets up the free tier. A paid plan needs two settings that the plugin
