@@ -101,8 +101,9 @@ With this plugin, copying the key file is the simpler route.
 
 **No GitHub account, or signed up at [saihm.net/free](https://saihm.net/free)?** Sign up
 there if you haven't yet. The page gives you your key file
-and the steps to put it in `~/.saihm`, where this plugin reads it. Follow them, then add
-SAIHM to Claude Code once, with this plugin or with the page's configuration, since both
+and the steps to put it in `~/.saihm`, where this plugin reads it. Follow them on your own
+computer that only you use, then add SAIHM to Claude Code once, with this plugin or with
+the page's configuration, since both
 add the same server. If `~/.saihm` already holds a key and the page has you keep the new
 one in another folder, use the page's configuration instead of this plugin, because this
 plugin uses the key in `~/.saihm`. If you use the page's configuration and already
