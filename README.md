@@ -100,7 +100,7 @@ and the steps to put it in `~/.saihm`, where this plugin reads it. Follow them, 
 SAIHM to Claude Code once, with this plugin or with the page's configuration, since both
 add the same server. If `~/.saihm` already holds a key and the page has you keep the new
 one in another folder, use the page's configuration, because this plugin uses the key in
-`~/.saihm`. To add the page's configuration, pass its `saihm` entry to
+`~/.saihm`. To add the page's configuration, pass only the object under `"saihm"` to
 `claude mcp add-json --scope user saihm`. Then restart Claude Code and say
 **"Recall my SAIHM memories."** Your key is already active, so skip *"Join SAIHM"*.
 
