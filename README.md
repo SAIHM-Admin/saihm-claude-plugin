@@ -91,7 +91,8 @@ Then say **"Recall my SAIHM memories."**
 
 **Already have a SAIHM identity?** Don't join. If you're on the free tier, your key is in
 `~/.saihm/free-identity.key` on another computer (from a GitHub join or from saihm.net/free),
-and this is your own computer that only you use, first check this computer: if
+and this is your own computer that only you use and that keeps its home folder between
+sessions, first check this computer: if
 `~/.saihm/free-identity.key` is already there, for example from an accidental join, keep a
 copy of it. Then copy the other computer's
 `~/.saihm/free-identity.key` to the same place on this computer yourself.
