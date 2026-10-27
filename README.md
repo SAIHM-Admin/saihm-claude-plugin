@@ -194,9 +194,8 @@ and uninstall the plugin. Upgrading by card keeps the same key and every memory.
 ## Remove the plugin
 
 To delete your memories from SAIHM too, ask Claude to erase your SAIHM memories while the
-plugin is still installed. Looking memories up counts against the free allowance, so if
-yours has run out, Claude may not be able to find them to erase. In that case, contact
-SAIHM at [saihm.net/contact](https://saihm.net/contact).
+plugin is still installed. Listing your memories is free on every plan, so Claude can find
+them to erase.
 
 Then quit every Claude Code window and any other app that runs SAIHM with this key. Run
 `claude plugin uninstall saihm`, or uninstall it from the Installed tab in `/plugin` and
