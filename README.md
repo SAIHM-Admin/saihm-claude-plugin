@@ -82,7 +82,7 @@ saihm.net/free, as described below. The free join needs no card:
 1. If Claude asks whether you already have a SAIHM identity, answer no. If it asks about
    this computer's home folder, answer yes only on your own computer that only you use
    and that keeps its home folder between sessions.
-   Otherwise answer no, and join on that computer instead.
+   Otherwise answer no, and join on your own computer instead.
 2. SAIHM creates your key on this computer, and Claude shows you a link and a short code.
 3. Open the link, sign in to GitHub, enter the code and approve. The join finishes by
    itself.
