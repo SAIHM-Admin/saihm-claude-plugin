@@ -75,8 +75,9 @@ You can also run steps 2 and 3 from a terminal with
 To start a new SAIHM identity, say **"Join SAIHM"** in Claude Code, on a computer you keep.
 If you already have one, tell Claude first and see below. The free join needs no card:
 
-1. SAIHM creates your key on this computer, and Claude shows you a link and a short code.
-2. Open the link, sign in to GitHub, enter the code and approve. The join finishes by
+1. If Claude asks whether you already have a SAIHM identity, answer no.
+2. SAIHM creates your key on this computer, and Claude shows you a link and a short code.
+3. Open the link, sign in to GitHub, enter the code and approve. The join finishes by
    itself.
 
 Then say **"Recall my SAIHM memories."**
