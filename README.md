@@ -124,9 +124,11 @@ of its own, so name SAIHM when you want your SAIHM memory. Some starters for a t
 
 > In this CI job, recall the team's SAIHM memory "release rules" and fail the job if the changelog breaks any of them.
 
-Sharing with a colleague and CI jobs need a little setup, shown in the guide under
-[Share with a colleague](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#share-with-a-colleague)
-and [Hosted agent environments](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#hosted-agent-environments).
+Sharing with a colleague needs a little setup, shown in the guide under
+[Share with a colleague](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#share-with-a-colleague).
+A CI job needs an identity in its settings, set the way the guide's
+[Hosted agent environments](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#hosted-agent-environments)
+section shows.
 
 More prompts are in the [SAIHM manual](https://saihm.net/manual).
 
