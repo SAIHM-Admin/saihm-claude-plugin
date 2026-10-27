@@ -1,7 +1,7 @@
 {
   "name": "saihm",
   "displayName": "SAIHM",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Portable long-term memory for Claude Code. SAIHM encrypts each memory on your computer before sending it.",
   "author": {
     "name": "SAIHM, Inc.",
