@@ -101,17 +101,25 @@ make you another one, and anyone who has the file can read, change and erase you
 ## Things to say
 
 You talk to Claude in plain language, and it picks the tools. Claude Code also keeps notes
-of its own, so name SAIHM when you want your SAIHM memory. Some starters:
+of its own, so name SAIHM when you want your SAIHM memory. Some starters for a team:
 
-> Recall my SAIHM memories before you start.
+> Liberally use SAIHM to maximize token economy. Recall by topic instead of re-reading files, and save each decision as we make it.
 
-> Remember in SAIHM that I prefer short answers and no preamble.
+> Recall only my SAIHM memories about the billing service, then give me its open decisions and next steps in five bullets before we write any code.
 
-> What does SAIHM remember about my deployment checklist?
+> Remember in SAIHM as a decision record: webhook retries use idempotency keys, decided 2026-10-20 by Dana; revisit if duplicate charges exceed 0.1%.
 
-> Show my SAIHM status.
+> Set a SAIHM invariant: ask me twice before any SAIHM erase, and never store passwords, keys or customer personal data in SAIHM.
 
-> Erase my SAIHM memory about the Henderson account.
+> Before we finish, save a SAIHM memory of what we changed, why, and what is still open, so any agent with my key can pick it up tomorrow.
+
+> Share my SAIHM memory about the release runbook with the agent in ./identities/qa-agent.json, read-only, until Friday 17:00 UTC.
+
+> A customer asked us to delete their data. Find every SAIHM memory that mentions Acme Corp, show me each one, and erase them one at a time after I confirm.
+
+> In this CI job, recall the team's SAIHM memory "release rules" and fail the job if the changelog breaks any of them.
+
+More prompts are in the [SAIHM manual](https://saihm.net/manual).
 
 ## Tools
 
