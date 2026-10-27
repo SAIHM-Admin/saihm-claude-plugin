@@ -223,8 +223,9 @@ delete the `recall.` files in that folder.
 
 ## Help
 
-- **The tools don't appear:** run the `npx` command from step 1 of Install once. Then open
-  `/mcp` in Claude Code and reconnect the `plugin:saihm:saihm` server.
+- **The tools don't appear:** first check that you have Node.js 20.19 or later
+  (`node --version`). Then run the `npx` command from step 1 of Install once, open `/mcp`
+  in Claude Code and reconnect the `plugin:saihm:saihm` server.
 - **Guide and reference:**
   [github.com/SAIHM-Admin/saihm-mcp-server-pro](https://github.com/SAIHM-Admin/saihm-mcp-server-pro)
 - **Support:** [saihm.net/contact](https://saihm.net/contact)
