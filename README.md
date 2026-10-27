@@ -184,8 +184,8 @@ as it was when the backup was made.
   [How it works](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#how-it-works) in the
   same guide.
 - The plugin sets `SAIHM_ENDPOINT_URL`. The server also reads other `SAIHM_` settings, and
-  a few standard variables such as proxy settings, from the environment Claude Code starts
-  in.
+  standard variables such as proxy settings and the ones that mark a CI job, from the
+  environment Claude Code starts in.
 - Apart from those settings, it sees only what Claude passes to its tools, and it reads
   only its own files and the identity record file you name when you share. It doesn't
   read Claude's own memory, your chat history or your other files.
