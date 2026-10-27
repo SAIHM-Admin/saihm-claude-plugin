@@ -63,8 +63,8 @@ of the plugin, and if you already installed the plugin, uninstall it
    /plugin install saihm@saihm
    ```
 
-   If Claude Code asks where to install it, choose user scope. The plugin is then yours
-   alone and stays out of any project's shared settings.
+   If Claude Code asks where to install it, choose user scope. The plugin is then installed
+   for your user account and stays out of any project's shared settings.
 
 4. Restart Claude Code.
 
