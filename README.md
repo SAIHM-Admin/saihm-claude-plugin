@@ -40,7 +40,9 @@ You need [Node.js](https://nodejs.org) 20.19 or later.
 - your current entry sets no `SAIHM_` setting except `SAIHM_ENDPOINT_URL`.
 
 Then remove the old entry with `claude mcp remove saihm` before you install the plugin, so
-that only one copy runs. Otherwise, or if you're not sure, keep your current setup.
+that only one copy runs. Otherwise, or if you're not sure, keep your current setup instead
+of the plugin, and if you already installed the plugin, uninstall it
+(`claude plugin uninstall saihm`) and restart Claude Code.
 
 1. The first start downloads the package from npm. To make it quick, run this once in a
    terminal. It downloads the package, prints its version and exits:
