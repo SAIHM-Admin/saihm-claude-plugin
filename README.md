@@ -90,9 +90,11 @@ by you (on macOS and Linux, `chmod 600 ~/.saihm/free-identity.key`). Then restar
 Code and say **"Recall my SAIHM memories."** Claude may suggest `export-identity` instead.
 With this plugin, copying the key file is the simpler route.
 
-**Signed up at [saihm.net/free](https://saihm.net/free)?** Set up SAIHM with the steps in
-the guide's [Start free](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#start-free--one-command)
-section instead of this plugin.
+**Signed up at [saihm.net/free](https://saihm.net/free)?** The page gives you your key file
+and the steps to put it in `~/.saihm`, where this plugin reads it. Follow them, and in
+Claude Code use either this plugin or the page's configuration, since both add the same
+server. Then restart Claude Code and say **"Recall my SAIHM memories."** Your key is
+already active, so skip *"Join SAIHM"*.
 
 **Keep a copy of your key file somewhere safe**, and treat it like a password. SAIHM can't
 make you another one, and anyone who has the file can read, change and erase your memories.
