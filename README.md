@@ -82,10 +82,11 @@ If you already have one, tell Claude so instead, and see below. The free join ne
 
 Then say **"Recall my SAIHM memories."**
 
-**Already have a SAIHM identity?** Don't join. If you're on the free tier and joined on
-another computer with GitHub, first check this computer: if `~/.saihm/free-identity.key`
-is already there, for example from an accidental join, keep a copy of it. Then copy the
-other computer's `~/.saihm/free-identity.key` to the same place on this computer yourself.
+**Already have a SAIHM identity?** Don't join. If you're on the free tier and your key is in
+`~/.saihm/free-identity.key` on another computer, from a GitHub join or from saihm.net/free,
+first check this computer: if `~/.saihm/free-identity.key` is already there, for example
+from an accidental join, keep a copy of it. Then copy the other computer's
+`~/.saihm/free-identity.key` to the same place on this computer yourself.
 Don't paste it into a chat, where Claude would see it. Make the copied file readable only
 by you (on macOS and Linux, `chmod 600 ~/.saihm/free-identity.key`). Then restart Claude
 Code and say **"Recall my SAIHM memories."** Claude may suggest `export-identity` instead.
