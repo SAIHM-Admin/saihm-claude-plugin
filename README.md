@@ -187,8 +187,8 @@ as it was when the backup was made.
   a few standard variables such as proxy settings, from the environment Claude Code starts
   in.
 - Apart from those settings, it sees only what Claude passes to its tools, and it reads
-  only its own files. It doesn't read Claude's own memory, your chat history or your other
-  files.
+  only its own files and the identity record file you name when you share. It doesn't
+  read Claude's own memory, your chat history or your other files.
 
 ## Plans
 
