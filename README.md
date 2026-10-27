@@ -93,9 +93,11 @@ Code and say **"Recall my SAIHM memories."** Claude may suggest `export-identity
 With this plugin, copying the key file is the simpler route.
 
 **Signed up at [saihm.net/free](https://saihm.net/free)?** The page gives you your key file
-and the steps to put it in `~/.saihm`, where this plugin reads it. Follow them, and in
-Claude Code use either this plugin or the page's configuration, since both add the same
-server. Then restart Claude Code and say **"Recall my SAIHM memories."** Your key is
+and the steps to put it in `~/.saihm`, where this plugin reads it. Follow them, then add
+SAIHM to Claude Code once, with this plugin or with the page's configuration, since both
+add the same server. If `~/.saihm` already holds a key and the page has you keep the new
+one in another folder, use the page's configuration, because this plugin uses the key in
+`~/.saihm`. Then restart Claude Code and say **"Recall my SAIHM memories."** Your key is
 already active, so skip *"Join SAIHM"*.
 
 **Keep a copy of your key file somewhere safe**, and treat it like a password. SAIHM can't
