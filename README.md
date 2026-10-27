@@ -40,8 +40,8 @@ You need [Node.js](https://nodejs.org) 20.19 or later.
 - your current entry sets no `SAIHM_` setting except `SAIHM_ENDPOINT_URL`.
 
 Then remove the old entry with `claude mcp remove saihm` before you install the plugin, so
-that only one copy runs. Otherwise, or if you're not sure, keep your current setup instead
-of the plugin, and if you already installed the plugin, uninstall it
+that only one SAIHM server runs. Otherwise, or if you're not sure, keep your current setup
+instead of the plugin, and if you already installed the plugin, uninstall it
 (`claude plugin uninstall saihm`) and restart Claude Code.
 
 1. The first start downloads the package from npm. To make it quick, run this once in a
@@ -108,8 +108,8 @@ add the same server. If `~/.saihm` already holds a key and the page has you keep
 one in another folder, use the page's configuration instead of this plugin, because this
 plugin uses the key in `~/.saihm`. If you use the page's configuration and already
 installed the plugin, uninstall the plugin first (`claude plugin uninstall saihm`), so that
-only one copy runs. To add the page's configuration, pass only the object under `"saihm"`
-to `claude mcp add-json --scope user saihm`. Then restart Claude Code and say
+only one SAIHM server runs. To add the page's configuration, pass only the object under
+`"saihm"` to `claude mcp add-json --scope user saihm`. Then restart Claude Code and say
 **"Recall my SAIHM memories."** Your key is already active, so skip *"Join SAIHM"*.
 
 **Keep a copy of your key file somewhere safe**, and treat it like a password. SAIHM can't
