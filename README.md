@@ -89,7 +89,7 @@ saihm.net/free, as described below. The free join needs no card:
 
 Then say **"Recall my SAIHM memories."**
 
-**Already have a SAIHM identity?** Don't join. If you're on the free tier, your key is in
+**Already have a SAIHM identity?** Don't join. If you're on the free tier and your key is in
 `~/.saihm/free-identity.key` on another computer (from a GitHub join or from saihm.net/free),
 and this is your own computer that only you use and that keeps its home folder between
 sessions, first check this computer: if
