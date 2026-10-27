@@ -205,9 +205,9 @@ Paid plans are monthly, and prices are on the
 [pricing page](https://saihm.net/pricing).
 
 This plugin sets up the free tier. A paid plan needs two settings that the plugin
-doesn't set, so on a paid plan, set up SAIHM with the client steps in the
-[guide](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client)
-and uninstall the plugin.
+doesn't set, so on a paid plan, uninstall the plugin (`claude plugin uninstall saihm`) and
+set up SAIHM with the client steps in the
+[guide](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client).
 [Upgrading by card](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#what-it-costs)
 keeps the same key and every memory.
 
