@@ -14,7 +14,7 @@ and you can go without one (see
 
 This plugin adds the SAIHM MCP server,
 [`@saihm/mcp-server-pro`](https://www.npmjs.com/package/@saihm/mcp-server-pro) version
-0.14.3, which runs on your computer. It sets up the free tier. Paid plans use a different
+0.15.0, which runs on your computer. It sets up the free tier. Paid plans use a different
 setup, described under Plans below.
 
 ## Where it works
@@ -48,7 +48,7 @@ instead of the plugin, and if you already installed the plugin, uninstall it
    terminal. It downloads the package, prints its version and exits:
 
    ```sh
-   npx -y @saihm/mcp-server-pro@0.14.3 --version
+   npx -y @saihm/mcp-server-pro@0.15.0 --version
    ```
 
 2. In Claude Code, add this repository as a plugin marketplace:
@@ -174,7 +174,7 @@ as it was when the backup was made.
 
 ## What this plugin runs, sends and keeps
 
-- It runs `npx -y @saihm/mcp-server-pro@0.14.3`. On the first start, npm downloads that
+- It runs `npx -y @saihm/mcp-server-pro@0.15.0`. On the first start, npm downloads that
   package and its dependencies from the npm registry.
 - The server connects only to `https://saihm.net`. It sends each memory there encrypted
   when Claude saves it, and fetches memories from there when Claude recalls them. It also
