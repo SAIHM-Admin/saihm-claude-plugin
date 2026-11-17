@@ -190,16 +190,16 @@ as it was when the backup was made.
   your memories become part of the conversation. If you have saved a profile (a memory
   that starts with `SAIHM-PROFILE` and names you or your project), the server also asks
   Claude to apply it and to say so in one line, and tells Claude that a profile sets
-  preferences only: sharing, erasing, installing, editing a settings or instruction file,
-  skipping a confirmation and writing a profile still need your yes in the session.
+  preferences only, and that sharing, erasing, installing, editing a settings or
+  instruction file, skipping a confirmation and writing a profile still need your yes in
+  the session.
 - On your computer, the server keeps your key and its own state in `~/.saihm`, including a
   short-lived sign-in and, once it finds a paid plan, that plan's name. Neither holds your
-  key. It also
-  keeps an unencrypted copy of your memories there, so that later recalls fetch only what
-  is new or has changed, on this computer or another. The copy holds every memory you save
-  or read on this computer and, after the first recall, all of your memories. Only your
-  user account can read it, and `forget` removes a memory from it too. This plugin keeps
-  the copy on your own computer.
+  key. It also keeps an unencrypted copy of your memories there, so that later recalls
+  fetch only what is new or has changed, on this computer or another. The copy holds every
+  memory you save or read on this computer and, after the first recall, all of your
+  memories. Only your user account can read it, and `forget` removes a memory from it too.
+  This plugin keeps the copy on your own computer.
 - Without the copy, each recall fetches all of your memories again. That is slower and, on
   a plan that limits recalls, such as the free tier, uses up its allowance faster. If you'd
   rather not keep one, quit every Claude Code window and any other app that runs SAIHM
@@ -239,7 +239,8 @@ own key. A stablecoin plan also needs two settings, `SAIHM_TIER` and
 uninstall the plugin (`claude plugin uninstall saihm`), then set up SAIHM with the client
 steps in the
 [guide](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client),
-using the configuration the page gives you where it gives one.
+using the configuration the page gives you where it gives one. That configuration holds
+your key: don't paste it into a chat, where Claude would see it.
 
 ## Remove the plugin
 
