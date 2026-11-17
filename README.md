@@ -15,7 +15,7 @@ and you can go without one (see
 This plugin adds the SAIHM MCP server,
 [`@saihm/mcp-server-pro`](https://www.npmjs.com/package/@saihm/mcp-server-pro) version
 0.15.0, which runs on your computer. It sets up the free tier, and it switches on its own
-to a plan you pay for by card on the same key, as described under Plans below.
+when you upgrade by card, as described under Plans below.
 
 ## Where it works
 
@@ -182,15 +182,19 @@ as it was when the backup was made.
   package and its dependencies from the npm registry.
 - The server connects only to `https://saihm.net`. It sends each memory there encrypted
   when Claude saves it, and fetches memories from there when Claude recalls them. It also
-  carries the requests that share and erase memories, and the steps of a join.
+  carries the requests that share and erase memories, and the steps of a join. It signs in
+  there with your key's public part and a signature, never the key itself, and the answer
+  is how it finds a plan you paid for.
 - A join asks you to sign in to GitHub in your own browser.
 - The server asks Claude to load your memories before other work in each session, so
-  your memories become part of the conversation. It also asks Claude to apply a profile
-  of yours, a memory that starts with `SAIHM-PROFILE` and names you or your project, and
-  to say so in one line. A profile sets preferences only: sharing, erasing, installing,
-  editing a settings or instruction file, skipping a confirmation and writing a profile
-  still need your yes in the session.
-- On your computer, the server keeps your key and its own state in `~/.saihm`. It also
+  your memories become part of the conversation. If you have saved a profile (a memory
+  that starts with `SAIHM-PROFILE` and names you or your project), the server also asks
+  Claude to apply it and to say so in one line, and tells Claude that a profile sets
+  preferences only: sharing, erasing, installing, editing a settings or instruction file,
+  skipping a confirmation and writing a profile still need your yes in the session.
+- On your computer, the server keeps your key and its own state in `~/.saihm`, including a
+  short-lived sign-in and, once it finds a paid plan, that plan's name. Neither holds your
+  key. It also
   keeps an unencrypted copy of your memories there, so that later recalls fetch only what
   is new or has changed, on this computer or another. The copy holds every memory you save
   or read on this computer and, after the first recall, all of your memories. Only your
@@ -223,17 +227,19 @@ This plugin sets up the free tier.
 [Upgrading by card](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#what-it-costs)
 keeps the same key and every memory, and the plugin needs no setting for it: after you
 pay, it finds your plan and switches to it on its own, within the hour. It follows a later
-change of plan the same way. This works from plugin version 1.0.3. To switch at once on
-the computer where you ran the upgrade command, restart Claude Code, then say
+change of plan the same way. That needs plugin version 1.0.3 or later: if you installed an
+earlier version, update the plugin and restart Claude Code first. To switch at once on the
+computer where you ran the guide's upgrade command, restart Claude Code, then say
 **"Show my SAIHM status."** It shows your plan. To change or cancel a plan, email
 ops@saihm.net with [billing] at the start of the subject.
 
 A plan you pay for on the [join page](https://saihm.net/join) is a new identity with its
-own key, and a stablecoin plan also needs two settings, `SAIHM_TIER` and
+own key. A stablecoin plan also needs two settings, `SAIHM_TIER` and
 `SAIHM_PAYMENT_METHOD`, that the plugin doesn't set. For a plan from the join page,
-uninstall the plugin (`claude plugin uninstall saihm`) and set up SAIHM with the client
+uninstall the plugin (`claude plugin uninstall saihm`), then set up SAIHM with the client
 steps in the
-[guide](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client).
+[guide](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client),
+using the configuration the page gives you where it gives one.
 
 ## Remove the plugin
 
