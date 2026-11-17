@@ -185,7 +185,11 @@ as it was when the backup was made.
   carries the requests that share and erase memories, and the steps of a join.
 - A join asks you to sign in to GitHub in your own browser.
 - The server asks Claude to load your memories before other work in each session, so
-  your memories become part of the conversation.
+  your memories become part of the conversation. It also asks Claude to apply a profile
+  of yours, a memory that starts with `SAIHM-PROFILE` and names you or your project, and
+  to say so in one line. A profile sets preferences only: sharing, erasing, installing,
+  editing a settings or instruction file, skipping a confirmation and writing a profile
+  still need your yes in the session.
 - On your computer, the server keeps your key and its own state in `~/.saihm`. It also
   keeps an unencrypted copy of your memories there, so that later recalls fetch only what
   is new or has changed, on this computer or another. The copy holds every memory you save
