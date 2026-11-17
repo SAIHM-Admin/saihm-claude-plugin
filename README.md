@@ -74,10 +74,10 @@ You can also run steps 2 and 3 from a terminal with
 
 ## Get started
 
-To start a new SAIHM identity, say **"Join SAIHM"** in Claude Code, on your own computer
-that only you use and that keeps its home folder between sessions. If you already have
-one, tell Claude so instead, and see below. No GitHub account? Skip the join and start at
-saihm.net/free, as described below. The free join needs no card:
+To start a new SAIHM identity, say **"Join SAIHM"** or **"Add SAIHM"** in Claude Code, on
+your own computer that only you use and that keeps its home folder between sessions. If
+you already have one, tell Claude so instead, and see below. No GitHub account? Skip the
+join and start at saihm.net/free, as described below. The free join needs no card:
 
 1. If Claude asks whether you already have a SAIHM identity, answer no. If it asks about
    this computer's home folder, answer yes only on your own computer that only you use
@@ -91,8 +91,9 @@ Then say **"Recall my SAIHM memories."**
 
 **Already have a SAIHM identity?** Don't join. If you're on the free tier or on a plan you
 paid for by card, and your key is in `~/.saihm/free-identity.key` on another computer
-(from a GitHub join or from saihm.net/free), and this is your own computer that only you
-use and that keeps its home folder between sessions, first check this computer: if
+(from a GitHub join, saihm.net/free or saihm.net/microsoft), and this is your own computer
+that only you use and that keeps its home folder between sessions, first check this
+computer: if
 `~/.saihm/free-identity.key` is already there, for example from an accidental join, keep a
 copy of it. Then copy the other computer's
 `~/.saihm/free-identity.key` to the same place on this computer yourself.
@@ -101,19 +102,22 @@ by you (on macOS and Linux, `chmod 600 ~/.saihm/free-identity.key`). Then restar
 Code and say **"Recall my SAIHM memories."** Claude may suggest `export-identity` instead.
 With this plugin, copying the key file is the simpler route.
 
-**No GitHub account, or signed up at [saihm.net/free](https://saihm.net/free)?** Sign up
-there if you haven't yet. The page gives you your key file
-and the steps to put it in `~/.saihm`, where this plugin reads it. Follow them on your own
-computer that only you use and that keeps its home folder between sessions, then add SAIHM
-to Claude Code once, with this plugin or with
-the page's configuration, since both
-add the same server. If `~/.saihm` already holds a key and the page has you keep the new
-one in another folder, use the page's configuration instead of this plugin, because this
-plugin uses the key in `~/.saihm`. If you use the page's configuration and already
-installed the plugin, uninstall the plugin first (`claude plugin uninstall saihm`), so that
-only one SAIHM server runs. To add the page's configuration, pass only the object under
-`"saihm"` to `claude mcp add-json --scope user saihm`. Then restart Claude Code and say
-**"Recall my SAIHM memories."** Your key is already active, so skip *"Join SAIHM"*.
+**No GitHub account, or signed up at [saihm.net/free](https://saihm.net/free) or
+[saihm.net/microsoft](https://saihm.net/microsoft)?** Sign up at saihm.net/free if you
+haven't yet, or at saihm.net/microsoft if you're coming from Microsoft Marketplace: sign
+in with your Microsoft account on the computer where Claude Code runs, and create your
+free key there. You get your key file and the steps to put it in `~/.saihm`, where this
+plugin reads it. Follow them on your own computer that only you use and that keeps its
+home folder between sessions, then add SAIHM to Claude Code once, with this plugin or with
+the page's configuration, since both add the same server. If `~/.saihm` already holds a
+key and the page has you keep the new one in another folder, use the page's configuration
+instead of this plugin, because this plugin uses the key in `~/.saihm`. If you use the
+page's configuration and already installed the plugin, uninstall the plugin first
+(`claude plugin uninstall saihm`), so that only one SAIHM server runs. To add the page's
+configuration, pass only the object under `"saihm"` to
+`claude mcp add-json --scope user saihm`. Then restart Claude Code and say
+**"Recall my SAIHM memories."** Your key is already active, so skip *"Join SAIHM"* and
+*"Add SAIHM"*.
 
 **Keep a copy of your key file somewhere safe**, and treat it like a password. SAIHM can't
 make you another one, and anyone who has the file can read, change and erase your memories.
