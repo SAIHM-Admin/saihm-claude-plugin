@@ -14,8 +14,8 @@ and you can go without one (see
 
 This plugin adds the SAIHM MCP server,
 [`@saihm/mcp-server-pro`](https://www.npmjs.com/package/@saihm/mcp-server-pro) version
-0.15.0, which runs on your computer. It sets up the free tier. Paid plans use a different
-setup, described under Plans below.
+0.15.0, which runs on your computer. It sets up the free tier, and it switches on its own
+to a plan you pay for by card on the same key, as described under Plans below.
 
 ## Where it works
 
@@ -35,7 +35,7 @@ You need [Node.js](https://nodejs.org) 20.19 or later.
 
 **Already using SAIHM in Claude Code?** Switch to the plugin only if all three hold:
 
-- you're on the free tier;
+- you're on the free tier, or on a plan you paid for by card;
 - your key is in `~/.saihm/free-identity.key`, which is where a GitHub join puts it;
 - your current entry sets no `SAIHM_` setting except `SAIHM_ENDPOINT_URL`.
 
@@ -89,10 +89,10 @@ saihm.net/free, as described below. The free join needs no card:
 
 Then say **"Recall my SAIHM memories."**
 
-**Already have a SAIHM identity?** Don't join. If you're on the free tier and your key is in
-`~/.saihm/free-identity.key` on another computer (from a GitHub join or from saihm.net/free),
-and this is your own computer that only you use and that keeps its home folder between
-sessions, first check this computer: if
+**Already have a SAIHM identity?** Don't join. If you're on the free tier or on a plan you
+paid for by card, and your key is in `~/.saihm/free-identity.key` on another computer
+(from a GitHub join or from saihm.net/free), and this is your own computer that only you
+use and that keeps its home folder between sessions, first check this computer: if
 `~/.saihm/free-identity.key` is already there, for example from an accidental join, keep a
 copy of it. Then copy the other computer's
 `~/.saihm/free-identity.key` to the same place on this computer yourself.
@@ -211,12 +211,21 @@ Start free. The free tier is a one-time allowance, with no card and nothing to c
 Paid plans are monthly, and prices are on the
 [pricing page](https://saihm.net/pricing).
 
-This plugin sets up the free tier. A paid plan needs two settings that the plugin
-doesn't set, so on a paid plan, uninstall the plugin (`claude plugin uninstall saihm`) and
-set up SAIHM with the client steps in the
-[guide](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client).
+This plugin sets up the free tier.
 [Upgrading by card](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#what-it-costs)
-keeps the same key and every memory.
+keeps the same key and every memory, and the plugin needs no setting for it: after you
+pay, it finds your plan and switches to it on its own, within the hour. It follows a later
+change of plan the same way. This works from plugin version 1.0.3. To switch at once on
+the computer where you ran the upgrade command, restart Claude Code, then say
+**"Show my SAIHM status."** It shows your plan. To change or cancel a plan, email
+ops@saihm.net with [billing] at the start of the subject.
+
+A plan you pay for on the [join page](https://saihm.net/join) is a new identity with its
+own key, and a stablecoin plan also needs two settings, `SAIHM_TIER` and
+`SAIHM_PAYMENT_METHOD`, that the plugin doesn't set. For a plan from the join page,
+uninstall the plugin (`claude plugin uninstall saihm`) and set up SAIHM with the client
+steps in the
+[guide](https://github.com/SAIHM-Admin/saihm-mcp-server-pro#add-saihm-to-your-ai-client).
 
 ## Remove the plugin
 
